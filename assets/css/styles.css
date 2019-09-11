@@ -192,21 +192,59 @@ border: 0.8px solid #979797;
      font-style: normal;
      font-weight: normal;
      font-size: 14px;
+     margin-left:20px;
 }
 
 #login{
     border:solid 1px red;
-    margin-top:25px;  
+    margin-top:25px;
+     
 }
-
 
 #foto{/*Foto de usuario*/
     
     margin-top:15px;
 }
 
-#bordeFoto{/*Borde alrededor de la foto*/
-    border: 2px solid #6EC1E4;
+/*#bordeFoto{/*Borde alrededor de la foto y mover hacia la izq*/
+   /* border: 2px solid #6EC1E4;
     width:50em;
     /*6EC1E4;*/
+/*}*/
+
+#sidebarR{
+    border:solid 1px black;
+    background: #231F20;
+    height: 528px;
+    padding: 0;
 }
+.subtitle{/*SidebarR subtitles*/
+    margin-top:40px;
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-align: left;
+    list-style: none;
+}
+
+#itemsList{/*SidebarR list of items*/
+  
+}
+
+.items{/*SidebarR items*/
+    margin-top:12px;
+    list-style: none;
+    color: #6EC1E4;
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+li i{/*i from li elements of sidebarR*/
+    margin-right:20px;
+}
+
