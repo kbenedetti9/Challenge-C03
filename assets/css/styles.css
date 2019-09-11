@@ -33,12 +33,13 @@
    margin-top: 20px;
    margin-left:5px;
    color:black;
-   font-weight: 700;
+   font-weight: 800;
+   font-size:22px;
 }
 
 #logo{/*Logo de la empresa*/
     margin-left: 20px;
-    margin-bottom:8px;
+    margin-bottom:9px;
 }
 
 #contenedor{/*Contenedor de nav bar*/
@@ -53,36 +54,40 @@
     background: #FCF8F3;
     border-radius: 0px 0px 0px 0px;/*Quitar el borde redondeado de ser necesario*/
     border:solid 2px black;/*Probar*/
+    padding: 0;/*Prueba busqueda*/
 }
 
 @media only screen and (max-width: 300px) {
-    #contenedorLogo{
-        display: none;
-    }
     #contenedor{
       width: 100%;
    }
    #principal{
-       width:100%;
-       padding:0;
-       margin-left:0;
-    margin-right: 0;
+      /* width:100%;
+      /* padding:0;
+      /* margin-left:0;
+   /* margin-right: 0;*/
    }
    #p{
-       width:100%;
-       padding:0;
-       margin-left:0;
-    margin-right: 0;
+      /* width:100%;
+       /*padding:0;
+     /* margin-left:0;
+    margin-right: 0;*/
    }
    .row{
-    margin-left:0;
-    margin-right: 0;
-    padding:0;
+   /* margin-left:0;
+    margin-right: 0;*/
+    /*padding:0;*/
    }
+}
+@media only screen and (max-width: 340px) {
+    #contenedorLogo{
+      display:none;
+    }
+    
 }
 
 @media only screen and (max-width: 1180px) {
-    #nombre{
+    #nombre,#descrip,.vl,#bordeFoto{
       display:none;
     }
     #logo{
@@ -119,30 +124,59 @@
     margin-top:20px;
     }
 }
-/*#descrip{/*Titulo bookshelf*/
-   /* margin-left: 30px;
+
+#descrip{/*Titulo bookshelf*/
+  margin-left: 10px;
+   margin-top:15px;
+   color:black;
+   font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    border:solid 1px black;/*Probar*/
+}/*Listo*/
+
+/*PRUEBA DE CAMPO DE BUSQUEDA*/
+
+#form{/*Contenedpor form de busqueda*/
+    border:solid 2px red;
+    margin-top:15px;
 }
 
 #contenedorBuscar{/*Caja de busqueda*/
-   /* margin-right: 100px;
-    border: 1px solid #6EC1E4;
+   /*margin-right: 100px;*/
+   /* border: 1px solid #6EC1E4;
     box-sizing: border-box;
+    border-radius: 21px 16px 16px 16px;*/
+    background: rgba(245, 246, 248, 0.51186);
+    border: 1px solid #6EC1E4;
+    /*box-sizing: border-box;*/
     border-radius: 21px 16px 16px 16px;
 }
 #lupa{/*Icono de lupa(search)*/
-    /*color:black;
+    color:black;
     margin-left:10px;
 }
 
-#search-field{/*Input de buscar (Dar color negro a las letras (placeholder))*/
-    /*font-family: Pluto Sans;
+#search-field{/*Input de buscar (Quitar azul dse alrededor)*/
+    background: rgba(245, 246, 248, 0.51186);
+    font-family: Pluto Sans;
     font-size: 14px;
-    line-height: 17px;    
+    line-height: 17px;   
+    border-radius: 21px 16px 16px 16px;
+    border:rgba(245, 246, 248, 0.51186);
+}
+
+#search-field::placeholder{
+    color: black;
+    font-size: 14px;
 }
 
 
+
 .vl {/*Linea de separacion*/
-   /* border: 0.8px solid #979797;
+border: 0.8px solid #979797;
+   background:#979797;
     height:60px;
     margin-top:8px;
     position: absolute;
@@ -152,25 +186,27 @@
 }
 
 #opciones{/*Boton de desplegar opciones*/
-   /*margin-right: 30px;
-   color:black;
-   font-family: Pluto Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
+  
+    color:black;
+    font-family: Pluto Sans;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 14px;
 }
 
+#login{
+    border:solid 1px red;
+    margin-top:25px;  
+}
+
+
 #foto{/*Foto de usuario*/
-    /*margin-right:40px;
-    border: 2px solid #6EC1E4;
+    
+    margin-top:15px;
 }
 
 #bordeFoto{/*Borde alrededor de la foto*/
-   /* width: 40px;
-    margin-right:30px;
-     -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-     border-radius: 50%;
-     background: #F7F6F5;
     border: 2px solid #6EC1E4;
-}*/
+    width:50em;
+    /*6EC1E4;*/
+}
