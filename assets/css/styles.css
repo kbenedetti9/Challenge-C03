@@ -1,3 +1,7 @@
+body{
+    height: 100vh;
+}
+
 #principal{/*Contenedor principal de barra de navegacion*/
     border: solid 1px green;/*Probar*/
     padding: 0;
@@ -79,11 +83,11 @@
     /*padding:0;*/
    }
 }
+
 @media only screen and (max-width: 340px) {
     #contenedorLogo{
       display:none;
     }
-    
 }
 
 @media only screen and (max-width: 1180px) {
@@ -202,20 +206,16 @@ border: 0.8px solid #979797;
 }
 
 #foto{/*Foto de usuario*/
-    
+    border-color: #6EC1E4;
+    border-style: solid;
+    border-radius: 50%;
     margin-top:15px;
 }
-
-/*#bordeFoto{/*Borde alrededor de la foto y mover hacia la izq*/
-   /* border: 2px solid #6EC1E4;
-    width:50em;
-    /*6EC1E4;*/
-/*}*/
 
 #sidebarR{
     border:solid 1px black;
     background: #231F20;
-    height: 528px;
+    height: 100%;
     padding: 0;
 }
 .subtitle{/*SidebarR subtitles*/
@@ -228,10 +228,6 @@ border: 0.8px solid #979797;
     color: #FFFFFF;
     text-align: left;
     list-style: none;
-}
-
-#itemsList{/*SidebarR list of items*/
-  
 }
 
 .items{/*SidebarR items*/
@@ -248,3 +244,28 @@ li i{/*i from li elements of sidebarR*/
     margin-right:20px;
 }
 
+#contenido{
+    border: solid 2px red;
+}
+
+@media(max-width: 400px) {
+   
+    #contenido{
+        float:left;
+    }
+
+    #sidebarR{
+        float: right;
+    }
+    /*Rotar posicion de columnas*/
+    .cambia{
+          transform: rotate(180deg);
+          direction: ltr; /* Fix the horizontal alignment */
+        }
+      
+        .cambia > [class*="col-"] {
+          transform: rotate(-180deg);
+          direction: rtl; /* Fix the horizontal alignment */
+        }
+      
+}
