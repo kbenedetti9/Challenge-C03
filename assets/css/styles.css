@@ -1,7 +1,7 @@
 #myContainer{/*Principal container of everything*/
     margin:0;
     padding: 0;
-    /*border:solid 1px orange;/*Probar*/
+    border:solid 1px orange;/*Probar*/
 } 
 
 .row{/*Rows*/
@@ -21,7 +21,7 @@
     background: white;
     height: 60px;
     padding: 0;
-    /*border:solid 1px black;/*Probar*/
+    border:solid 1px black;/*Probar*/
 }
 
 #logo{/*Company logo*/
@@ -61,7 +61,7 @@
     height: 60px;   
     background: #FCF8F3;
     border-radius: 0px 0px 0px 0px;
-    /*border:solid 2px black;/*Probar*/
+    border:solid 2px black;/*Probar*/
     padding: 0;/*Prueba busqueda*/
 }
 
@@ -72,7 +72,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    /*border:solid 1px black;/*Probar*/
+    border:solid 1px black;/*Probar*/
 }
 
 /*-Disapearing columns between descrip-search and separating line-*/
@@ -93,7 +93,7 @@
 
 #form{/*Search form*/
     margin-top:15px;
-   /* border:solid 1px red;/*Probar*/
+    border:solid 1px red;/*Probar*/
 }
 
 #searchContainer{/*Search container*/
@@ -140,14 +140,14 @@
 }
 
 #login{
-   /* border:solid 1px red;/*Probar*/
+    border:solid 1px red;/*Probar*/
     margin-top:25px;
 }
 
 /*USER IMAGE STYLES*/
 
 #imageContainer{/*Container for user image*/
-  /*  border:solid 1px blueviolet;/*Probar*/
+    border:solid 1px blueviolet;/*Probar*/
     margin-top:-8px;
     
 }
@@ -160,13 +160,13 @@
     margin-left:15px;
 }
 
-/*-Disapearing user image-*/
+/*-Disapearing user image and reorganizing content-*/
 @media (max-width: 768px) {
     #imageContainer{
         display: none;
     }
     /*-Reorganizing content-*/
-    #contenido{
+    #bookshelf{
         float:left;
     }
 
@@ -219,10 +219,12 @@ li i{/*i from li elements of sidebarL*/
    margin-right:20px;
 }
 
-#contenido{
-    /*border: solid 2px red;*/
+#bookshelf{/*Bookshlef container*/
+    border: solid 2px red;
     padding:0;
 }
+
+/*TOP INFORMATION STYLES*/
 
 #new{
     /*border: solid 1px teal;/*Probar*/
@@ -231,8 +233,6 @@ li i{/*i from li elements of sidebarL*/
     font-family: Pluto Sans;
     font-weight: 390;
     font-size: 14px;
-    
-
 }
 
 #date{
@@ -246,8 +246,8 @@ li i{/*i from li elements of sidebarL*/
     float: right;
 }
 
-.l {/*Separation line*/
-    border: 0.8px solid rgba(151, 151, 151, 0.786628);
+.l {/*Separating line*/
+   border: 0.8px solid rgba(151, 151, 151, 0.786628);
     background: rgba(151, 151, 151, 0.786628);
     height:15px;
     margin-top:22px;
@@ -273,7 +273,6 @@ li i{/*i from li elements of sidebarL*/
 }
 
 #icon2{
-  
     color: #6EC1E4;
 }
 
@@ -282,6 +281,7 @@ li i{/*i from li elements of sidebarL*/
     margin:0;
     height:40px;
     padding: 0;
+    
 }
 
 .prueba1{
@@ -290,28 +290,23 @@ li i{/*i from li elements of sidebarL*/
     height: 40px;
 }
 
+/*BOOKS STYLES*/
 
-
-@media(max-width: 400px) {
-   
-   /* #contenido{
-        float:left;
-    }
-
-    #sidebarL{
-        float: right;
-    }
-    /*Rotar posicion de columnas*/
-   /* .cambia{
-          transform: rotate(180deg);
-          direction: ltr; /* Fix the horizontal alignment */
-     /*   }
-      
-        .cambia > [class*="col-"] {
-          transform: rotate(-180deg);
-          direction: rtl; /* Fix the horizontal alignment */
-      /*  }    */  
+#books{
+    border: solid 1px yellow;
+    padding: 10px;
 }
+
+.column{
+    width:120px;
+}
+
+
+
+
+
+
+/*RIGHT SIDEBAR STYLES*/
 
 #sidebarR ul li{
     margin-top:20px;

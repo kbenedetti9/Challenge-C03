@@ -14,48 +14,61 @@
 
 <body>
     <div id="myContainer" class="container-fluid">
-        <div class="row d-flex"><!--Row for navigation bar-->
-            <div id="principal" class="col-12"><!--Principal container for navigation bar-->
-                <div class="row d-flex"><!--Row inside navigation bar-->
-                    <div id="logoContainer" class="d-flex col-md-2 col-sm-0"><!--Logo container -->
+        <div class="row d-flex">
+            <!--Row for navigation bar-->
+            <div id="principal" class="col-12">
+                <!--Principal container for navigation bar-->
+                <div class="row d-flex">
+                    <!--Row inside navigation bar-->
+                    <div id="logoContainer" class="d-flex col-md-2 col-sm-0">
+                        <!--Logo container -->
                         <img id="logo" class="rounded-circle img-fluid border" src="assets/img/logo.jpg" width="50em"
-                            alt="logo"> <!--Logo image-->
-                        <a id="name" class="navbar-brand" href="#">JOBSITY</a><!--Name-->
+                            alt="logo">
+                        <!--Logo image-->
+                        <a id="name" class="navbar-brand" href="#">JOBSITY</a>
+                        <!--Name-->
                     </div>
-                    <div id="container" class="container col-md-10 col-sm-12 "><!--Navbar objects container-->
-                        <div class="row"><!--Row inside navbar objects container-->
-                            <a id="descrip" class=" col-lg-2 col-md-2 col-sm-0" href="#">Bookshelf</a><!--Description-->
+                    <div id="container" class="container col-md-10 col-sm-12 ">
+                        <!--Navbar objects container-->
+                        <div class="row">
+                            <!--Row inside navbar objects container-->
+                            <a id="descrip" class=" col-lg-2 col-md-2 col-sm-0" href="#">Bookshelf</a>
+                            <!--Description-->
                             <!--<button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span
                                 class="sr-only">Toggle navigation</span><span
                                 class="navbar-toggler-icon"></span></button>-->
                             <!-- <div class="collapse navbar-collapse" id="navcol-1">-->
-                                <div id="space" class="col-lg-4 col-md-0 col-sm-0"></div><!--Space-->
-                          <form  id="form" class="form-inline col-lg-3 col-md-4 col-sm-6" target="_self">
-                               <div id="searchContainer" class=" form-group d-flex justify-content-lg-end "><!--Search container-->
+                            <div id="space" class="col-lg-4 col-md-0 col-sm-0"></div>
+                            <!--Space-->
+                            <form id="form" class="form-inline col-lg-3 col-md-4 col-sm-6" target="_self">
+                                <div id="searchContainer" class=" form-group d-flex justify-content-lg-end ">
+                                    <!--Search container-->
                                     <label for="search-field">
                                         <i id="lens" class="fa fa-search"></i>
                                     </label>
-                                    <input id="search-field" class="form-control form-control-sm align-items-end search-field"
-                                        type="search"  name="search" placeholder="Search..."
-                                        required=""><!--Search input-->
-                              </div>
+                                    <input id="search-field"
+                                        class="form-control form-control-sm align-items-end search-field" type="search"
+                                        name="search" placeholder="Search..." required="">
+                                    <!--Search input-->
+                                </div>
                             </form>
                             <!-- </div>-->
                             <!--Row-->
                             <div class="vl"></div>
-                          <li id="login" class="dropdown d-flex col-lg-2 col-md-3 col-sm-3 ">
+                            <li id="login" class="dropdown d-flex col-lg-2 col-md-3 col-sm-3 ">
                                 <a id="opciones" class="dropdown-toggle text-capitalize" data-toggle="dropdown"
                                     aria-expanded="false" href="#">Jakob Treml</a>
                                 <div class="dropdown-menu" role="menu">
-                                    <a class="dropdown-item" role="presentation" href="#">First Item</a>
-                                    <a class="dropdown-item" role="presentation" href="#">Second Item</a>
+                                    <a class="dropdown-item" role="presentation" href="#">Profile</a>
+                                    <a class="dropdown-item" role="presentation" href="#">Logout</a>
                                 </div>
                             </li>
                             <!--style-->
-                        <div id="imageContainer" class="col-lg-1 col-md-2"><!--Container for user image-->
-                                <img id="image" class="rounded-circle img-fluid" src="assets/img/logo.jpg"
-                                    width="45em" alt="user picture">
-                         </div>
+                            <div id="imageContainer" class="col-lg-1 col-md-2">
+                                <!--Container for user image-->
+                                <img id="image" class="rounded-circle img-fluid" src="assets/img/logo.jpg" width="45em"
+                                    alt="user picture">
+                            </div>
                         </div>
                         <!--Row-->
                         <!--  </div>-Collapse nav-->
@@ -69,7 +82,9 @@
         <!--Row-->
         <div class="row cambia">
             <div id="sidebarL" class=" col-lg-2 col-md-2 col-sm-12 d-flex side">
+                <!--Left sidebar-->
                 <ul id="itemsList">
+                    <!--Item list of left sidebar-->
                     <li class="subtitle">MAIN</li>
                     <li class="items">
                         <label>
@@ -87,72 +102,99 @@
                         <label>
                             <i class="fas fa-fw fa-tablet-alt"></i>
                         </label>
-                            Digital</li>
+                        Digital</li>
                     <li class="items">
                         <label>
-                                <i class="fas fa-fw fa-user-tag"></i>
+                            <i class="fas fa-fw fa-user-tag"></i>
                         </label>
                         Personal Loans</li>
                     <li class="items">
                         <label>
-                                <i class="fas fa-fw fa-tags"></i>
+                            <i class="fas fa-fw fa-tags"></i>
                         </label>New releases</li>
                     <li class="subtitle">YOUR BOOKS</li>
                     <li class="items">
                         <label>
-                                <i class="fas fa-book-open"></i>
+                            <i class="fas fa-book-open"></i>
                         </label>
                         Readings</li>
                     <li class="items">
                         <label>
-                                <i class="fas fa-history"></i>
+                            <i class="fas fa-history"></i>
                         </label>History</li>
                     <li class="items">
                         <label>
-                                <i class="fas fa-bookmark"></i>
+                            <i class="fas fa-bookmark"></i>
                         </label> Later</li>
                     <li class="items">
                         <label>
-                                <i class="fas fa-heart"></i>
+                            <i class="fas fa-heart"></i>
                         </label>Favorites</li>
                 </ul>
             </div>
-            <div id="contenido" class="col-lg-8 col-md-10 col-sm-12 d-flex float-left">
-            <div id ="prueba" class="container row">
-                <div class="prueba1 col-3">
-                <p id="new">New Releases</p>
-                </div>
-                <div class="prueba1 col-3">
-                    <p id="date">Release Date</p>
-                </div>
-                <div class="l"></div>
-                <div class="prueba1 col-3">
-                    <p id="popularity">Popularity</p>
-                </div>
-                <div class="prueba1 col-3">
-                    <label>
-                            <i id="icon1" class="fas fa-th-large"></i>
-                    </label>               
-                        <label>
-                                <i id="icon2" class="fas fa-th-list "></i>
-                        </label>
-                    </div>
-                </div>
-                    
-            
-            
-            </div><!--Contenido prueba-->
-               <div id="sidebarR"class="col-lg-2 d-flex float-left side">
-                        <ul>
-                            <li id="lista">MOST READ BOOKS</li>
-                            <li>1.Hooked: How to Build Habit-...</li>
-                            <li>2.The Inevitable: Understandin...</li>
-                            <li>3.Lean In: Women, Work and t...</li>
-                            <li>4.Building a Business When Th...</li>
-                            <li>5.How Google Works</li>
-                        </ul>
+            <div id="bookshelf" class="col-lg-8 col-md-10 col-sm-12 d-flex float-left">
+                <!--Content container-->
+                <div id="prueba" class="row container col-12">
+                    <!--Row for top information elements--> 
+                       <div class="prueba1 col-3">
+                            <p id="new">New Releases</p>
                         </div>
-        </div><!--Row-->
+                        <div class="prueba1 col-3">
+                            <p id="date">Release Date</p>
+                        </div>
+                        <div class="l"></div>
+                        <div class="prueba1 col-3">
+                            <p id="popularity">Popularity</p>
+                        </div>
+                        <div class="prueba1 col-3">
+                            <label>
+                                <i id="icon1" class="fas fa-th-large"></i>
+                            </label>
+                            <label>
+                                <i id="icon2" class="fas fa-th-list "></i>
+                            </label>
+                        </div>    
+                        <div id="books" class="row col-12 container">
+                                <div class="column">
+                                        <div class="card">
+                                          <img src="assets/img/book1.jpg" alt="Jane" style="width:100%">
+                                          <div class="container">
+                                            <h4>THE INSTITUTE</h4>
+                                            <p class="title">Founder</p>
+                                            <p>Some text </p>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                        </div><!--Row of books container-->
+                </div><!--Prueba-->
+                
+                
+            </div>
+            <!--bookshelf container-->
+
+
+
+
+
+
+
+
+            <div id="sidebarR" class="col-lg-2 d-flex float-left side">
+                <!--Right sidebar-->
+                <ul>
+                    <!--Elements list of right sidebar-->
+                    <li id="lista">MOST READ BOOKS</li>
+                    <li>1.Hooked: How to Build Habit-...</li>
+                    <li>2.The Inevitable: Understandin...</li>
+                    <li>3.Lean In: Women, Work and t...</li>
+                    <li>4.Building a Business When Th...</li>
+                    <li>5.How Google Works</li>
+                </ul>
+            </div>
+        </div>
+        <!--Row-->
         <!--  <div class="col d-flex">
                 <div class="card-group">
                     <div class="card"><img class="card-img-top w-100 d-block">
