@@ -72,7 +72,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    border:solid 1px black;/*Probar*/
+    /*border:solid 1px black;/*Probar*/
 }
 
 /*-Disapearing columns between descrip-search and separating line-*/
@@ -93,14 +93,14 @@
 
 #form{/*Search form*/
     margin-top:15px;
-    border:solid 1px red;
+   /* border:solid 1px red;/*Probar*/
 }
 
 #searchContainer{/*Search container*/
     background: rgba(245, 246, 248, 0.51186);
     border: 1px solid #6EC1E4;
     border-radius: 21px 16px 16px 16px;
-    margin-top:0px;
+    margin-top:-5px;
 }
 #lens{/*Lens icon*/
     color:black;
@@ -127,7 +127,7 @@
     height:40px;
     margin-top:10px;
     position: absolute;
-    left: 77%;
+    left: 80%;
 }
 
 #opciones{/*Boton de desplegar opciones*/
@@ -136,18 +136,20 @@
      font-style: normal;
      font-weight: normal;
      font-size: 14px;
-     margin-left:20px;
+     margin-left:65px;
 }
 
 #login{
-    border:solid 1px red;
+   /* border:solid 1px red;/*Probar*/
     margin-top:25px;
 }
 
 /*USER IMAGE STYLES*/
 
 #imageContainer{/*Container for user image*/
-    border:solid 1px blueviolet;
+  /*  border:solid 1px blueviolet;/*Probar*/
+    margin-top:-8px;
+    
 }
 
 #image{/*User image*/
@@ -155,6 +157,7 @@
     border-style: solid;
     border-radius: 50%;
     margin-top:15px;
+    margin-left:15px;
 }
 
 /*-Disapearing user image-*/
@@ -184,14 +187,14 @@
 
 /*LEFT SIDEBAR STYLES*/
 
-#sidebarL{
+.side{
     border:solid 1px black;
     background: #231F20;
-    height: 100%;
+    margin-bottom: 0;
     padding: 0;
 }
 .subtitle{/*sidebarL subtitles*/
-    margin-top:40px;
+    margin-top:35px;
     font-family: Pluto Sans;
     font-style: normal;
     font-weight: bold;
@@ -208,21 +211,90 @@
     color: #6EC1E4;
     font-family: Pluto Sans;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 380;
     font-size: 13px;
 }
 
 li i{/*i from li elements of sidebarL*/
-    margin-right:20px;
+   margin-right:20px;
 }
 
 #contenido{
-    border: solid 2px red;
+    /*border: solid 2px red;*/
+    padding:0;
 }
+
+#new{
+    /*border: solid 1px teal;/*Probar*/
+    margin-top:20px;
+    margin-left:75px;
+    font-family: Pluto Sans;
+    font-weight: 390;
+    font-size: 14px;
+    
+
+}
+
+#date{
+    margin-right:5px;
+    margin-top:20px;
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #979797;
+    float: right;
+}
+
+.l {/*Separation line*/
+    border: 0.8px solid rgba(151, 151, 151, 0.786628);
+    background: rgba(151, 151, 151, 0.786628);
+    height:15px;
+    margin-top:22px;
+    position: absolute;
+    left: 50%;
+}
+
+#popularity{
+    margin-left:5px;
+    margin-top:22px;
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #858585;
+}
+
+#icon1{
+    margin-top:20px;
+    margin-left:30px;
+    color: #6EC1E4;
+}
+
+#icon2{
+  
+    color: #6EC1E4;
+}
+
+#prueba{
+    border:solid 1px darkblue;
+    margin:0;
+    height:40px;
+    padding: 0;
+}
+
+.prueba1{
+    border:solid 1px darkorange;
+    padding: 0;
+    height: 40px;
+}
+
+
 
 @media(max-width: 400px) {
    
-    #contenido{
+   /* #contenido{
         float:left;
     }
 
@@ -230,14 +302,32 @@ li i{/*i from li elements of sidebarL*/
         float: right;
     }
     /*Rotar posicion de columnas*/
-    .cambia{
+   /* .cambia{
           transform: rotate(180deg);
           direction: ltr; /* Fix the horizontal alignment */
-        }
+     /*   }
       
         .cambia > [class*="col-"] {
           transform: rotate(-180deg);
           direction: rtl; /* Fix the horizontal alignment */
-        }
-      
+      /*  }    */  
+}
+
+#sidebarR ul li{
+    margin-top:20px;
+    text-align: left;
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    
+/* identical to box height */
+color: #FCF8F3;
+mix-blend-mode: normal;
+opacity: 0.7;
+list-style: none;
+}
+
+#sidebarR ul{
+    margin-right:15px;
 }
