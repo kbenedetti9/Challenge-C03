@@ -13,54 +13,49 @@
 </head>
 
 <body>
-    <div id="p" class="container-fluid">
-        <div class="row d-flex">
-            <div id="principal" class="col-12">
-                <!--   <nav id="nav" class="navbar navbar-light navbar-expand-md bg-light d-flex navigation-clean-search">
-             -->
-                <div class="row d-flex">
-
-                    <div id="contenedorLogo" class="col-2">
-                        <img id="logo" class="rounded-circle img-fluid border" src="assets/img/logo.jpg" width="40em"
-                            alt="logo">
-                        <a id="nombre" class="navbar-brand" href="#">JOBSITY</a>
+    <div id="myContainer" class="container-fluid">
+        <div class="row d-flex"><!--Row for navigation bar-->
+            <div id="principal" class="col-12"><!--Principal container for navigation bar-->
+                <div class="row d-flex"><!--Row inside navigation bar-->
+                    <div id="logoContainer" class="d-flex col-md-2 col-sm-0"><!--Logo container -->
+                        <img id="logo" class="rounded-circle img-fluid border" src="assets/img/logo.jpg" width="50em"
+                            alt="logo"> <!--Logo image-->
+                        <a id="name" class="navbar-brand" href="#">JOBSITY</a><!--Name-->
                     </div>
-                    <div id="contenedor" class="container col-10">
-                        <!--<img class="rounded-circle img-fluid border" src="assets/img/logo.jpg" width="40em" alt="logo">
-                        <a id="logo" class="navbar-brand" href="#">JOBSITY</a>-->
-                        <div class="row">
-                            <!--Prueba-->
-                            <a id="descrip" class="navbar-brand col-2" href="#">Bookshelf</a>
+                    <div id="container" class="container col-md-10 col-sm-12 "><!--Navbar objects container-->
+                        <div class="row"><!--Row inside navbar objects container-->
+                            <a id="descrip" class=" col-lg-2 col-md-2 col-sm-0" href="#">Bookshelf</a><!--Description-->
                             <!--<button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span
                                 class="sr-only">Toggle navigation</span><span
                                 class="navbar-toggler-icon"></span></button>-->
                             <!-- <div class="collapse navbar-collapse" id="navcol-1">-->
-                            <form id="form" class="form-inline ml-auto  col-sm-8 col-md-3 col-offset-4" target="_self">
-                                <div id="contenedorBuscar" class="form-group d-flex float-right justify-content-lg-end">
+                                <div id="space" class="col-lg-4 col-md-0 col-sm-0"></div><!--Space-->
+                          <form  id="form" class="form-inline col-lg-3 col-md-4 col-sm-6" target="_self">
+                               <div id="searchContainer" class=" form-group d-flex justify-content-lg-end "><!--Search container-->
                                     <label for="search-field">
-                                        <i id="lupa" class="fa fa-search"></i>
+                                        <i id="lens" class="fa fa-search"></i>
                                     </label>
-                                    <input class="form-control form-control-sm align-items-end search-field"
-                                        type="search" id="search-field" name="search" placeholder="Search..."
-                                        required="">
-                                </div>
+                                    <input id="search-field" class="form-control form-control-sm align-items-end search-field"
+                                        type="search"  name="search" placeholder="Search..."
+                                        required=""><!--Search input-->
+                              </div>
                             </form>
                             <!-- </div>-->
                             <!--Row-->
                             <div class="vl"></div>
-                          <!--OCULTAR FLECHA  <li id="login" class="dropdown d-flex col-md-2 ">
+                          <li id="login" class="dropdown d-flex col-lg-2 col-md-3 col-sm-3">
                                 <a id="opciones" class="dropdown-toggle text-capitalize" data-toggle="dropdown"
                                     aria-expanded="false" href="#">Jakob Treml</a>
                                 <div class="dropdown-menu" role="menu">
                                     <a class="dropdown-item" role="presentation" href="#">First Item</a>
                                     <a class="dropdown-item" role="presentation" href="#">Second Item</a>
                                 </div>
-                            </li>-->
+                            </li>
                             <!--style-->
-                       <!--OCULTAR IMG <div class="col-1">
-                                <img id="foto" class="rounded-circle img-fluid" src="assets/img/logo.jpg"
+                        <div id="imageContainer" class="col-lg-1 col-md-2"><!--Container for user image-->
+                                <img id="image" class="rounded-circle img-fluid" src="assets/img/logo.jpg"
                                     width="45em" alt="user picture">
-                         </div>-->
+                         </div>
                         </div>
                         <!--Row-->
                         <!--  </div>-Collapse nav-->
@@ -68,13 +63,12 @@
                     <!--Contenedor de nav bar-->
                 </div>
                 <!--Row-->
-                <!--</nav>-->
             </div>
             <!--principal-->
         </div>
         <!--Row-->
         <div class="row cambia">
-            <div id="sidebarR" class=" col-md-2 col-sm-12 d-flex ">
+            <div id="sidebarL" class=" col-lg-2 col-md-2 col-sm-12 d-flex ">
                 <ul id="itemsList">
                     <li class="subtitle">MAIN</li>
                     <li class="items">

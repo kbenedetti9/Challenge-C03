@@ -1,168 +1,113 @@
-body{
-    height: 100vh;
+#myContainer{/*Principal container of everything*/
+    margin:0;
+    padding: 0;
+    /*border:solid 1px orange;/*Probar*/
+} 
+
+.row{/*Rows*/
+    margin:0;
+    padding: 0;
+} 
+
+#principal{/*Principal container for navigation bar*/
+    /*border: solid 1px green;/*Probar*/
+    padding: 0;
+    margin:0;
+    border-bottom: solid 1px #6EC1E4;
 }
 
-#principal{/*Contenedor principal de barra de navegacion*/
-    border: solid 1px green;/*Probar*/
-    padding: 0;
-}
-
-.row{/*Filas*/
-    margin-left:0;
-    margin-right: 0;
-    padding: 0;
-}
-
-#p{/**/
-    margin-left:0;
-    margin-right: 0;
-    padding: 0;
-}  
-
-/*#nav{/*Barra de navegacion*/
-    /*height: 80px;
-    padding: 0;
-    border: solid 2px red;/*Probar*/
-/*}/*Listo*/
-
-#contenedorLogo{/*Contenedor de logo*/
-    /*margin-left:0px;*/
+/*LOGO STYLES*/
+#logoContainer{/*Logo container*/
     background: white;
-    /*width: 300px;*/
-    height: 80px;
-    border:solid 1px black;/*Probar*/
+    height: 60px;
+    padding: 0;
+    /*border:solid 1px black;/*Probar*/
 }
 
-#nombre{/*Nombre de la empresa*/
-   margin-top: 20px;
+#logo{/*Company logo*/
+    margin-left: 20px;
+    margin-bottom:10px;
+}
+
+#name{/*Company name*/
+   margin-top: 10px;
    margin-left:5px;
    color:black;
    font-weight: 800;
    font-size:22px;
 }
 
-#logo{/*Logo de la empresa*/
-    margin-left: 20px;
-    margin-bottom:9px;
-}
+/*-Positioning logo a name company-*/
+/*@media (min-width: 768px) and (max-width: 1243px) {
+    #logoContainer{
+        padding:0;
+    }
+    #logo{
+        width:30px;
+        margin-left:4px;
+        margin-top:9px;
+    }
+    #name{
+        margin-top:20px;
+        font-size:16px;
+    }
+    #logoContainer{
+        border: solid 1px red;
+    }
+}*/
 
-#contenedor{/*Contenedor de nav bar*/
-    /*position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;*/
-    height: 80px;   
-    /*width:975px;*/
-    /*margin-left:300px;*/
+
+#container{/*Navbar objects container*/
+    height: 60px;   
     background: #FCF8F3;
-    border-radius: 0px 0px 0px 0px;/*Quitar el borde redondeado de ser necesario*/
-    border:solid 2px black;/*Probar*/
+    border-radius: 0px 0px 0px 0px;
+    /*border:solid 2px black;/*Probar*/
     padding: 0;/*Prueba busqueda*/
 }
 
-@media only screen and (max-width: 300px) {
-    #contenedor{
-      width: 100%;
-   }
-   #principal{
-      /* width:100%;
-      /* padding:0;
-      /* margin-left:0;
-   /* margin-right: 0;*/
-   }
-   #p{
-      /* width:100%;
-       /*padding:0;
-     /* margin-left:0;
-    margin-right: 0;*/
-   }
-   .row{
-   /* margin-left:0;
-    margin-right: 0;*/
-    /*padding:0;*/
-   }
-}
-
-@media only screen and (max-width: 340px) {
-    #contenedorLogo{
-      display:none;
-    }
-}
-
-@media only screen and (max-width: 1180px) {
-    #nombre,#descrip,.vl,#bordeFoto{
-      display:none;
-    }
-    #logo{
-    margin-left: 20px;
-    margin-top:20px;
-    }
-}
-
-@media only screen and (max-width: 530px) {
-    #nombre{
-      display:none;
-    }
-    #logo{
-    margin-left: 10px;
-    margin-top:20px;
-    }
-}
-
-@media only screen and (max-width: 530px) {
-    #nombre{
-      display:none;
-    }
-    #logo{
-    margin-left: 5px;
-    margin-top:20px;
-    }
-}
-@media only screen and (max-width: 400px) {
-    #nombre{
-      display:none;
-    }
-    #logo{
-    margin-left: 0px;
-    margin-top:20px;
-    }
-}
-
-#descrip{/*Titulo bookshelf*/
-  margin-left: 10px;
-   margin-top:15px;
-   color:black;
-   font-family: Pluto Sans;
+#descrip{/*Bookshelf description*/
+    margin-top:15px;
+    color:black;
+    font-family: Pluto Sans;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     border:solid 1px black;/*Probar*/
-}/*Listo*/
-
-/*PRUEBA DE CAMPO DE BUSQUEDA*/
-
-#form{/*Contenedpor form de busqueda*/
-    border:solid 2px red;
-    margin-top:15px;
 }
 
-#contenedorBuscar{/*Caja de busqueda*/
-   /*margin-right: 100px;*/
-   /* border: 1px solid #6EC1E4;
-    box-sizing: border-box;
-    border-radius: 21px 16px 16px 16px;*/
+/*-Disapearing columns between descrip-search and separating line-*/
+@media (max-width: 1100px) {
+    #space,.vl{
+        display: none;
+    }
+}
+
+/*-Disapearing descrip-*/
+@media (max-width: 1000px) {
+    #descrip{
+        display: none;
+    }
+}
+
+/*SEARCH STYLES*/
+
+#form{/*Search form*/
+    margin-top:15px;
+    border:solid 1px red;
+}
+
+#searchContainer{/*Search container*/
     background: rgba(245, 246, 248, 0.51186);
     border: 1px solid #6EC1E4;
-    /*box-sizing: border-box;*/
     border-radius: 21px 16px 16px 16px;
+    margin-top:0px;
 }
-#lupa{/*Icono de lupa(search)*/
+#lens{/*Lens icon*/
     color:black;
     margin-left:10px;
 }
 
-#search-field{/*Input de buscar (Quitar azul dse alrededor)*/
+#search-field{/*Search input*/
     background: rgba(245, 246, 248, 0.51186);
     font-family: Pluto Sans;
     font-size: 14px;
@@ -176,21 +121,16 @@ body{
     font-size: 14px;
 }
 
-
-
-.vl {/*Linea de separacion*/
-border: 0.8px solid #979797;
-   background:#979797;
-    height:60px;
-    margin-top:8px;
+.vl {/*Separation line*/
+    border: 0.8px solid #979797;
+    background:#979797;
+    height:40px;
+    margin-top:10px;
     position: absolute;
-    left: 73%;
-    margin-left: -3px;
-    top:0;
+    left: 77%;
 }
 
 #opciones{/*Boton de desplegar opciones*/
-  
     color:black;
     font-family: Pluto Sans;
      font-style: normal;
@@ -202,23 +142,55 @@ border: 0.8px solid #979797;
 #login{
     border:solid 1px red;
     margin-top:25px;
-     
 }
 
-#foto{/*Foto de usuario*/
+/*USER IMAGE STYLES*/
+
+#imageContainer{/*Container for user image*/
+    border:solid 1px blueviolet;
+}
+
+#image{/*User image*/
     border-color: #6EC1E4;
     border-style: solid;
     border-radius: 50%;
     margin-top:15px;
 }
 
-#sidebarR{
+/*-Disapearing user image-*/
+@media (max-width: 768px) {
+    #imageContainer{
+        display: none;
+    }
+    /*-Reorganizing content-*/
+    #contenido{
+        float:left;
+    }
+
+    #sidebarL{
+        float: right;
+    }
+    /*-Rotating content and sidebar*/
+    .cambia{
+          transform: rotate(180deg);
+          direction: ltr; /* Fix the horizontal alignment */
+        }
+      
+        .cambia > [class*="col-"] {
+          transform: rotate(-180deg);
+          direction: rtl; /* Fix the horizontal alignment */
+        }
+}
+
+/*LEFT SIDEBAR STYLES*/
+
+#sidebarL{
     border:solid 1px black;
     background: #231F20;
     height: 100%;
     padding: 0;
 }
-.subtitle{/*SidebarR subtitles*/
+.subtitle{/*sidebarL subtitles*/
     margin-top:40px;
     font-family: Pluto Sans;
     font-style: normal;
@@ -230,7 +202,7 @@ border: 0.8px solid #979797;
     list-style: none;
 }
 
-.items{/*SidebarR items*/
+.items{/*sidebarL items*/
     margin-top:12px;
     list-style: none;
     color: #6EC1E4;
@@ -240,7 +212,7 @@ border: 0.8px solid #979797;
     font-size: 13px;
 }
 
-li i{/*i from li elements of sidebarR*/
+li i{/*i from li elements of sidebarL*/
     margin-right:20px;
 }
 
@@ -254,7 +226,7 @@ li i{/*i from li elements of sidebarR*/
         float:left;
     }
 
-    #sidebarR{
+    #sidebarL{
         float: right;
     }
     /*Rotar posicion de columnas*/
