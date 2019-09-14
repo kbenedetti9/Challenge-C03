@@ -132,54 +132,216 @@
                         </label>Favorites</li>
                 </ul>
             </div>
-            <div id="bookshelf" class="col-lg-8 col-md-10 col-sm-12 d-flex float-left">
+            <!--Left sidebar-->
+
+            <div id="bookshelf" class="col-lg-8 col-md-10 col-sm-12">
                 <!--Content container-->
-                <div id="prueba" class="row container col-12">
-                    <!--Row for top information elements--> 
-                       <div class="prueba1 col-3">
-                            <p id="new">New Releases</p>
-                        </div>
-                        <div class="prueba1 col-3">
-                            <p id="date">Release Date</p>
-                        </div>
-                        <div class="l"></div>
-                        <div class="prueba1 col-3">
-                            <p id="popularity">Popularity</p>
-                        </div>
-                        <div class="prueba1 col-3">
-                            <label>
+                <div class="row d-flex">
+                    <div id="topInfoContainer" class="class col-12">
+                        <!--Top information container-->
+                        <div class="row d-flex">
+                            <div class="col-3 test">
+                                <p id="new">New Releases</p>
+                            </div>
+                            <div class="col-3 test">
+                                <p id="date">Release Date</p>
+                            </div>
+                            <div class="col-3 test">
+                                <p id="popularity">Popularity</p>
+                            </div>
+                            <div class="col-3 test">
                                 <i id="icon1" class="fas fa-th-large"></i>
-                            </label>
-                            <label>
                                 <i id="icon2" class="fas fa-th-list "></i>
-                            </label>
-                        </div>    
-                        <div id="books" class="row col-12 container">
-                                <div class="column">
-                                        <div class="card">
-                                          <img src="assets/img/book1.jpg" alt="Jane" style="width:100%">
-                                          <div class="container">
-                                            <h4>THE INSTITUTE</h4>
-                                            <p class="title">Founder</p>
-                                            <p>Some text </p>
-                                          </div>
-                                        </div>
-                                      </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex col-12 books container">
+                    <div class="column">
+                        <div class="card first">
+                            <div class="cover">
+                                <img src="assets/img/book1.jpg" alt="Jane" style="width:40%">
+                            </div>
+                            <div class="container">
+                                <h6 class="title">The institute</h6>
+                                <p class="auth" style="margin:-2.5% 0;">Stephen King</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="cover">
+                                <img src="assets/img/book2.jpg" alt="Jane" style="width:40%">
+                            </div>
+                            <div class="container">
+                                <h6 class="title">The girl on the...</h6>
+                                <p class="auth" style="margin:-2.5% 0;">Paula Hawkins</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="cover">
+                                <img src="assets/img/book9.jpg" alt="Jane" style="width:40%">
+                            </div>
+                            <div class="container">
+                                <h6 class="title">The perfect child</h6>
+                                <p class="auth" style="margin:-2.5% 0;">Lucinda Berry</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="cover">
+                                <img src="assets/img/book10.jpg" alt="Jane" style="width:40%">
+                            </div>
+                            <div class="container">
+                                <h6 class="title">What have you...</h6>
+                                <p class="auth" style="margin:-2.5% 0;">Matthew Farrell</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="cover">
+                                <img src="assets/img/book14.jpg" alt="Jane" style="width:40%">
+                            </div>
+                            <div class="container">
+                                <h6 class="title">The last train...</h6>
+                                <p class="auth" style="margin:-2.5% 0;">Meg Waite Clayton</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex">
+                    <div class="row d-flex col-12 books container">
+                            <div class="column">
+                                <div class="card first">
+                                    <div class="cover">
+                                        <img src="assets/img/book7.jpg" alt="Jane" style="width:40%">
+                                    </div>
+                                    <div class="container">
+                                        <h6 class="title">Method 15/33</h6>
+                                        <p class="auth" style="margin:-2.5% 0;">Shannon Kirk</p>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <div class="cover">
+                                        <img src="assets/img/book8.jpg" alt="Jane" style="width:40%">
+                                    </div>
+                                    <div class="container">
+                                        <h6 class="title">The vine witch</h6>
+                                        <p class="auth" style="margin:-2.5% 0;">Luanne G. Smith</p>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <div class="cover">
+                                        <img src="assets/img/book12.jpg" alt="Jane" style="width:40%">
+                                    </div>
+                                    <div class="container">
+                                        <h6 class="title">After the flood</h6>
+                                        <p class="auth" style="margin:-2.5% 0;">Kassandra Montag</p>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <div class="cover">
+                                        <img src="assets/img/book11.jpg" alt="Jane" style="width:40%">
+                                    </div>
+                                    <div class="container">
+                                        <h6 class="title">Stranger things</h6>
+                                        <p class="auth" style="margin:-2.5% 0;">Gwenda Bond</p>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <div class="cover">
+                                        <img src="assets/img/book6.jpg" alt="Jane" style="width:40%">
+                                    </div>
+                                    <div class="container">
+                                        <h6 class="title">The only plane...</h6>
+                                        <p class="auth" style="margin:-2.5% 0;">Stephen King</p>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
 
 
-                        </div><!--Row of books container-->
-                </div><!--Prueba-->
-                
-                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
             <!--bookshelf container-->
-
-
-
-
-
-
-
 
             <div id="sidebarR" class="col-lg-2 d-flex float-left side">
                 <!--Right sidebar-->
@@ -192,36 +354,10 @@
                     <li>4.Building a Business When Th...</li>
                     <li>5.How Google Works</li>
                 </ul>
+                <!--Right sidebar-->
             </div>
         </div>
         <!--Row-->
-        <!--  <div class="col d-flex">
-                <div class="card-group">
-                    <div class="card"><img class="card-img-top w-100 d-block">
-                        <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Button</button></div>
-                    </div>
-                    <div class="card"><img class="card-img-top w-100 d-block">
-                        <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Button</button></div>
-                    </div>
-                    <div class="card"><img class="card-img-top w-100 d-block">
-                        <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Button</button></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 d-flex float-right">
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                </ul>
-            </div>-->
     </div>
     <!--Container fluid-->
 

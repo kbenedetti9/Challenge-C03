@@ -56,7 +56,6 @@
     }
 }*/
 
-
 #container{/*Navbar objects container*/
     height: 60px;   
     background: #FCF8F3;
@@ -102,6 +101,7 @@
     border-radius: 21px 16px 16px 16px;
     margin-top:-5px;
 }
+
 #lens{/*Lens icon*/
     color:black;
     margin-left:10px;
@@ -161,12 +161,12 @@
 }
 
 /*-Disapearing user image and reorganizing content-*/
-@media (max-width: 768px) {
-    #imageContainer{
+/* @media (max-width: 768px) { */
+    /* #imageContainer{
         display: none;
     }
     /*-Reorganizing content-*/
-    #bookshelf{
+    /* #bookshelf{
         float:left;
     }
 
@@ -174,16 +174,16 @@
         float: right;
     }
     /*-Rotating content and sidebar*/
-    .cambia{
+    /* .cambia{
           transform: rotate(180deg);
           direction: ltr; /* Fix the horizontal alignment */
-        }
+        /* }
       
         .cambia > [class*="col-"] {
           transform: rotate(-180deg);
           direction: rtl; /* Fix the horizontal alignment */
-        }
-}
+        /* }
+} */  
 
 /*LEFT SIDEBAR STYLES*/
 
@@ -198,7 +198,7 @@
     font-family: Pluto Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 10px;
     line-height: 16px;
     color: #FFFFFF;
     text-align: left;
@@ -212,11 +212,11 @@
     font-family: Pluto Sans;
     font-style: normal;
     font-weight: 380;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 li i{/*i from li elements of sidebarL*/
-   margin-right:20px;
+   margin-right:15px;
 }
 
 #bookshelf{/*Bookshlef container*/
@@ -226,18 +226,21 @@ li i{/*i from li elements of sidebarL*/
 
 /*TOP INFORMATION STYLES*/
 
-#new{
-    /*border: solid 1px teal;/*Probar*/
-    margin-top:20px;
-    margin-left:75px;
+.test{
+    height: 40px;
+    border:solid 1px fuchsia;
+}
+#new{/*New releases space*/
+    margin-top:10px; 
+    margin-left:40px;
     font-family: Pluto Sans;
     font-weight: 390;
     font-size: 14px;
 }
 
-#date{
-    margin-right:5px;
-    margin-top:20px;
+#date{/*Releases date space*/
+    margin-right:4px;
+    margin-top:10px;
     font-family: Pluto Sans;
     font-style: normal;
     font-weight: 500;
@@ -255,51 +258,82 @@ li i{/*i from li elements of sidebarL*/
     left: 50%;
 }
 
-#popularity{
-    margin-left:5px;
-    margin-top:22px;
+#popularity{/*Popularity space*/
+    margin-left:4px;
+    margin-top:10px;
     font-family: Pluto Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 17px;
     color: #858585;
 }
 
-#icon1{
-    margin-top:20px;
-    margin-left:30px;
+#icon1{/*Icon space*/
+    margin-top:10px;
+    margin-left:90px;
     color: #6EC1E4;
 }
 
-#icon2{
+#icon2{/*Icon space*/
     color: #6EC1E4;
-}
+} 
 
-#prueba{
-    border:solid 1px darkblue;
-    margin:0;
-    height:40px;
-    padding: 0;
-    
-}
 
-.prueba1{
-    border:solid 1px darkorange;
-    padding: 0;
+#topInfoContainer{
+    border: solid 1px yellowgreen;
     height: 40px;
 }
 
 /*BOOKS STYLES*/
-
-#books{
-    border: solid 1px yellow;
-    padding: 10px;
+.books{
+    height: 251px;
+    border:solid 1px blueviolet;
 }
 
-.column{
-    width:120px;
+.card{
+    /* width: 169px; */
+    width:140px;
+    height:251px;
 }
+
+.cover{
+    width:290px;
+    height: 360px;
+    
+    /* width:220px;
+    height: 340px; */
+}
+
+.first{
+    margin-left:80px;
+}
+
+.title{
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    color: #383838;
+}
+
+.auth{
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    color: #9E9E9E;
+}
+
+.fa-star{
+    font-size: 13px;
+    color: #6EC1E4;
+}
+
+
+
+
+
+
 
 
 
@@ -315,14 +349,8 @@ li i{/*i from li elements of sidebarL*/
     font-style: normal;
     font-weight: 300;
     font-size: 10px;
-    
-/* identical to box height */
-color: #FCF8F3;
-mix-blend-mode: normal;
-opacity: 0.7;
-list-style: none;
-}
-
-#sidebarR ul{
-    margin-right:15px;
+    color: #FCF8F3;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    list-style: none;
 }
