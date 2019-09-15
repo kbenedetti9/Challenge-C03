@@ -130,7 +130,7 @@
     left: 80%;
 }
 
-#opciones{/*Login button options*/
+#options{/*Login button options*/
     color:black;
     font-family: Pluto Sans;
      font-style: normal;
@@ -159,10 +159,6 @@
     margin-left:15px;
 }
 
-
-
-
-
     /*-Reorganizing content-*/
     /* #bookshelf{
         float:left;
@@ -185,13 +181,13 @@
 
 /*LEFT SIDEBAR STYLES*/
 
-.side{
+.side{/*Left and right sidebar*/
     border:solid 1px black;
     background: #231F20;
     margin-bottom: 0;
     padding: 0;
 }
-.subtitle{/*sidebarL subtitles*/
+.subtitle{/*Left sidebar subtitles*/
     margin-top:30px;
     font-family: Pluto Sans;
     font-style: normal;
@@ -203,7 +199,7 @@
     list-style: none;
 }
 
-.items{/*sidebarL items*/
+.items{/*Left sidebar items*/
     margin-top:12px;
     list-style: none;
     color: #6EC1E4;
@@ -213,7 +209,7 @@
     font-size: 11px;
 }
 
-li i{/*i from li elements of sidebarL*/
+li i{/*i from li elements of left sidebar*/
    margin-right:15px;
 }
 
@@ -223,8 +219,7 @@ li i{/*i from li elements of sidebarL*/
 }
 
 /*TOP INFORMATION STYLES*/
-
-.test{
+.test{/*Top information columns*/
     height: 40px;
     border:solid 1px fuchsia;
 }
@@ -247,7 +242,7 @@ li i{/*i from li elements of sidebarL*/
 }
 
 .l {/*Separating line*/
-   border: 0.8px solid rgba(151, 151, 151, 0.786628);
+    border: 0.8px solid rgba(151, 151, 151, 0.786628);
     background: rgba(151, 151, 151, 0.786628);
     height:15px;
     margin-top:22px;
@@ -288,19 +283,24 @@ li i{/*i from li elements of sidebarL*/
 }
 
 .card{/*Card for book information*/
-    width:140px;
+   /* width:140px;*/
     height:251px;
+    border:solid 2px orange;
 }
 
 .cover{/*Cover of the book*/
-    width:290px;
-    height: 360px;
+    width:100px;
+    height: 150px;
+    margin-left:20px;
+    border:solid 2px darkcyan;
 }
 
 .first{/*Fist book*/
-    margin-left:80px;
+     margin-left:68px;
 }
-
+.last{
+    margin-right:68px;
+}
 .title{/*Title*/
     font-family: Pluto Sans;
     font-style: normal;
@@ -318,9 +318,30 @@ li i{/*i from li elements of sidebarL*/
 }
 
 .fa-star{/*Rating*/
-    font-size: 13px;
+    font-size: 10px;
     color: #6EC1E4;
 }
+
+.pri{
+    border:solid 2px lightseagreen;
+    height: 251px;
+    padding: 0;
+}
+
+#portada{
+    border: solid 1px red;
+    height: 160px;
+    padding: 0;
+    
+}
+
+#titulo{
+    border:solid 1px blue;
+}
+
+
+
+
 
 /*RIGHT SIDEBAR STYLES*/
 
@@ -337,7 +358,7 @@ li i{/*i from li elements of sidebarL*/
     list-style: none;
 }
 
-#list{/*Titl of right sidebar*/
+#list{/*Title of right sidebar*/
     margin-top:20px;
     list-style: none;
     font-family: Pluto Sans;
@@ -373,7 +394,7 @@ li i{/*i from li elements of sidebarL*/
     #login{
         margin-top:10px;
     }
-    #opciones{
+    #options{
         margin-left:39%;
     }
     #container{
@@ -382,9 +403,7 @@ li i{/*i from li elements of sidebarL*/
     #searchContainer{
         margin-left:5%;
     }
-    #bookshelf,.books{
-        height: 800px;
-    }
+    
     #new,#date,#popularity,#icon1{
         margin-left:5%;
     }
@@ -422,9 +441,36 @@ li i{/*i from li elements of sidebarL*/
         display:none;
     }
 }
-
-@media (max-width:1185){
-    .colum{
-        width:10px;
+/*Giving size to books container*/
+@media (max-width:1234px){
+    .first{
+        margin-left: 0px;
     }
+    .last{
+        margin-right: 0px;
+    }
+    .cover{
+        margin-left:0px;
+    }
+}
+
+@media (max-width:575px){
+    #bookshelf{
+        height: 3000px;
+    }
+    
+    .books{
+        height: 1500px;
+    }
+}
+
+/*Giving color when hover in left sidebar items*/
+.items:hover{
+    color:white;
+}
+/*Giving shadow when hover in a book*/
+.cover:hover{
+    -webkit-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.94);
+    -moz-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.94);
+    box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.94);
 }
