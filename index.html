@@ -16,7 +16,7 @@
     <div id="myContainer" class="container-fluid">
         <div class="row d-flex">
             <!--Row for navigation bar-->
-            <div id="principal" class="col-12">
+            <div id="principal" class="col-12 container "><!--AGREGUE CONTAINER-->
                 <!--Principal container for navigation bar-->
                 <div class="row d-flex">
                     <!--Row inside navigation bar-->
@@ -40,7 +40,7 @@
                             <!-- <div class="collapse navbar-collapse" id="navcol-1">-->
                             <div id="space" class="col-lg-4 col-md-0 col-sm-0"></div>
                             <!--Space-->
-                            <form id="form" class="form-inline col-lg-3 col-md-4 col-sm-6" target="_self">
+                            <form id="form" class="form-inline col-lg-3 col-md-4 col-sm-4" target="_self">
                                 <div id="searchContainer" class=" form-group d-flex justify-content-lg-end ">
                                     <!--Search container-->
                                     <label for="search-field">
@@ -55,7 +55,7 @@
                             <!-- </div>-->
                             <!--Row-->
                             <div class="vl"></div>
-                            <li id="login" class="dropdown d-flex col-lg-2 col-md-3 col-sm-3 ">
+                            <li id="login" class="dropdown d-flex col-lg-2 col-md-3 col-sm-3">
                                 <a id="opciones" class="dropdown-toggle text-capitalize" data-toggle="dropdown"
                                     aria-expanded="false" href="#">Jakob Treml</a>
                                 <div class="dropdown-menu" role="menu">
@@ -135,28 +135,27 @@
             <!--Left sidebar-->
 
             <div id="bookshelf" class="col-lg-8 col-md-10 col-sm-12">
-                <!--Content container-->
-                <div class="row d-flex">
+               <!--Content container-->
+               <div class="row d-flex">
                     <div id="topInfoContainer" class="class col-12">
-                        <!--Top information container-->
                         <div class="row d-flex">
-                            <div class="col-3 test">
+                            <div class="col-md-3 col-sm-3 test">
                                 <p id="new">New Releases</p>
                             </div>
-                            <div class="col-3 test">
+                            <div class="col-md-3 col-sm-3 test">
                                 <p id="date">Release Date</p>
                             </div>
-                            <div class="col-3 test">
+                            <div class="col-md-3 col-sm-3 test">
                                 <p id="popularity">Popularity</p>
                             </div>
-                            <div class="col-3 test">
+                            <div class="col-md-3 col-sm-3 test">
                                 <i id="icon1" class="fas fa-th-large"></i>
                                 <i id="icon2" class="fas fa-th-list "></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row d-flex col-12 books container">
+              <div class="row d-flex col-12 books container">
                     <div class="column">
                         <div class="card first">
                             <div class="cover">
@@ -238,108 +237,90 @@
                         </div>
                     </div>
                 </div>
-                <div class="row d-flex">
+              <!-- <div class="row d-flex">
                     <div class="row d-flex col-12 books container">
-                            <div class="column">
-                                <div class="card first">
-                                    <div class="cover">
-                                        <img src="assets/img/book7.jpg" alt="Jane" style="width:40%">
-                                    </div>
-                                    <div class="container">
-                                        <h6 class="title">Method 15/33</h6>
-                                        <p class="auth" style="margin:-2.5% 0;">Shannon Kirk</p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
+                        <div class="column">
+                            <div class="card first">
+                                <div class="cover">
+                                    <img src="assets/img/book7.jpg" alt="Jane" style="width:40%">
+                                </div>
+                                <div class="container">
+                                    <h6 class="title">Method 15/33</h6>
+                                    <p class="auth" style="margin:-2.5% 0;">Shannon Kirk</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="card">
-                                    <div class="cover">
-                                        <img src="assets/img/book8.jpg" alt="Jane" style="width:40%">
-                                    </div>
-                                    <div class="container">
-                                        <h6 class="title">The vine witch</h6>
-                                        <p class="auth" style="margin:-2.5% 0;">Luanne G. Smith</p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <div class="cover">
+                                    <img src="assets/img/book8.jpg" alt="Jane" style="width:40%">
+                                </div>
+                                <div class="container">
+                                    <h6 class="title">The vine witch</h6>
+                                    <p class="auth" style="margin:-2.5% 0;">Luanne G. Smith</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="card">
-                                    <div class="cover">
-                                        <img src="assets/img/book12.jpg" alt="Jane" style="width:40%">
-                                    </div>
-                                    <div class="container">
-                                        <h6 class="title">After the flood</h6>
-                                        <p class="auth" style="margin:-2.5% 0;">Kassandra Montag</p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <div class="cover">
+                                    <img src="assets/img/book12.jpg" alt="Jane" style="width:40%">
+                                </div>
+                                <div class="container">
+                                    <h6 class="title">After the flood</h6>
+                                    <p class="auth" style="margin:-2.5% 0;">Kassandra Montag</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="card">
-                                    <div class="cover">
-                                        <img src="assets/img/book11.jpg" alt="Jane" style="width:40%">
-                                    </div>
-                                    <div class="container">
-                                        <h6 class="title">Stranger things</h6>
-                                        <p class="auth" style="margin:-2.5% 0;">Gwenda Bond</p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <div class="cover">
+                                    <img src="assets/img/book11.jpg" alt="Jane" style="width:40%">
+                                </div>
+                                <div class="container">
+                                    <h6 class="title">Stranger things</h6>
+                                    <p class="auth" style="margin:-2.5% 0;">Gwenda Bond</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="card">
-                                    <div class="cover">
-                                        <img src="assets/img/book6.jpg" alt="Jane" style="width:40%">
-                                    </div>
-                                    <div class="container">
-                                        <h6 class="title">The only plane...</h6>
-                                        <p class="auth" style="margin:-2.5% 0;">Stephen King</p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <div class="cover">
+                                    <img src="assets/img/book6.jpg" alt="Jane" style="width:40%">
+                                </div>
+                                <div class="container">
+                                    <h6 class="title">The only plane...</h6>
+                                    <p class="auth" style="margin:-2.5% 0;">Stephen King</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
                                 </div>
                             </div>
+                        </div>
                     </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                </div>-->
             </div>
             <!--bookshelf container-->
 
@@ -347,12 +328,12 @@
                 <!--Right sidebar-->
                 <ul>
                     <!--Elements list of right sidebar-->
-                    <li id="lista">MOST READ BOOKS</li>
-                    <li>1.Hooked: How to Build Habit-...</li>
-                    <li>2.The Inevitable: Understandin...</li>
-                    <li>3.Lean In: Women, Work and t...</li>
-                    <li>4.Building a Business When Th...</li>
-                    <li>5.How Google Works</li>
+                    <li id="list">MOST READ BOOKS</li>
+                    <li class="info">1.Hooked: How to Build Habit-...</li>
+                    <li class="info">2.The Inevitable: Understandin...</li>
+                    <li class="info">3.Lean In: Women, Work and t...</li>
+                    <li class="info">4.Building a Business When Th...</li>
+                    <li class="info">5.How Google Works</li>
                 </ul>
                 <!--Right sidebar-->
             </div>
