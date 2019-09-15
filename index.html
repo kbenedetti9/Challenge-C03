@@ -155,8 +155,49 @@
                     <div class="bookContainer col-lg-2 col-sm-2 container first">
                         <div class="row">
                             <div class="col-lg-12 bookImage">
-                                <div class="cover">
-                                    <img src="assets/img/book2.jpg" style="width:100%">
+                                <div class="cover onClickTextOverImage" id="imagen" style="background-image: url(assets/img/book2.jpg)">
+                                   <div class="fondo">
+                                    <div>
+                                    <img onclick="stopPropagation(event)" class="heart" src="assets/img/heart.png"> 
+                                    <img class="bookMark" src="assets/img/bookmark.png">
+                                    <img class="bookOpen" src="assets/img/book-open.png">
+                                    </div> 
+                                    <p class="rating">RATE THIS BOOK</p>
+                                    <div class="ratingStars">
+                                      <i class="fa fa-fw fa-star stars"></i>
+                                      <i class="fa fa-fw fa-star stars"></i>
+                                      <i class="fa fa-fw fa-star stars"></i>
+                                      <i class="fa fa-fw fa-star stars"></i>
+                                      <i class="far fa-fw fa-star stars"></i>
+                                    </div>
+                                    <i class="fas fa-caret-left arrow"></i>
+                                    <div class="bookCompleteInfo">
+                                            <p class="titleC" style="margin:1% 0;">THE GIRL ON THE TRAIN</p>
+                                            <p class="authC" style="margin:1% 0;">Novel by<span id="color-word"> Paula</span></p>
+                                            <p class="pagesC">395  pages</p>
+                                            <p class="itemTitle">SUMMARY</p>
+                                            <article style="margin:5% 0;">
+                                                    A divorcee becomes entangled in a missing
+                                                    persons investigation that promises to send
+                                                    shockwaves throughout her life.
+                                            </article>
+                                            <p class="itemTitle" style="margin:1% 0;">RATING</p>
+                                            <div class="star-rating">
+                                              <i class="fa fa-fw fa-star"></i>
+                                              <i class="fa fa-fw fa-star"></i>
+                                              <i class="fa fa-fw fa-star"></i>
+                                              <i class="fa fa-fw fa-star"></i>
+                                              <i class="far fa-fw fa-star"></i>
+                                            </div>
+                                            <p style="margin:6% 0;"></p>
+                                           <p class="itemTitle" style="margin:1% 0;">RECOMMENDED BY</p>
+                                            <div class="recommended">
+                                              <img src="assets/img/user3.png" >
+                                              <img src="assets/img/user2.png" >
+                                              <img src="assets/img/user.png" >
+                                            </div>
+                                          </div>
+                                   </div>
                                 </div>
                             </div>
                         </div>
@@ -378,6 +419,7 @@
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

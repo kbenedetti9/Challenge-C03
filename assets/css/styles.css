@@ -286,7 +286,7 @@ li i{/*i from li elements of left sidebar*/
     height: 150px;
     margin-left:20px;
     border:solid 2px darkcyan;
-}
+} 
 
 .first{/*Fist book*/
      margin-left:68px;
@@ -485,3 +485,146 @@ li i{/*i from li elements of left sidebar*/
     }
 }
 
+#imagen{
+    background-size: cover;
+}
+
+
+/*BOOK SELECTION*/
+
+.onClickTextOverImage{
+    background-size:cover;
+    display:inline-block;
+    box-shadow:0 0 16px rgba(0,0,0,0.5);
+    cursor:pointer;
+    position:relative;
+  }
+  
+.onClickTextOverImage .fondo{
+    position:absolute;
+    color:#fff;
+    padding:0px;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-color:rgba(0,0,0,0.8);
+    padding-top:35%;
+    text-align:center;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+  }
+  
+.onClickTextOverImage.show .fondo{
+    opacity:1;
+    padding-top:0%;
+    visibility:visible;
+  }
+
+.heart{
+    position: absolute;
+    height: 16px;
+    left: 8%;
+    right: 26.67%;
+    top: calc(11% - 16px/2 + 2px);
+}
+
+.bookMark{
+    position: absolute;
+    height: 16px;
+    left: 75%;
+    right: 8%;
+    top: calc(11% - 16px/2 + 2px);
+}
+
+.bookOpen{
+    height:25px;
+    margin-top:60px;
+}
+
+.rating{
+    margin-top:25px;
+    color: #FCF8F3;
+    font-size:8px;
+    font-family: Pluto Sans;
+    margin-bottom: 0px;
+}
+.ratingStars{
+    margin-top:0px;
+}
+
+.stars{
+    color: #E9BD49;
+    font-size: 8px;
+}
+
+/*BOOK SELECTION INFORMATION*/
+.onClickTextOverImage .arrow{
+    visibility: hidden;
+    position: absolute;
+    top:1.5em;
+    left:3.05em;
+    font-size:35px;
+    color: rgba(35, 31, 32, 0.88);
+    opacity: 0;
+}
+
+.onClickTextOverImage.show .arrow{
+    opacity: 1;
+    visibility: visible;
+}
+.onClickTextOverImage .bookCompleteInfo {
+    position: absolute;
+    z-index: 100;
+    width: 23em;
+    height: 22.375em;
+    background-color: rgba(35, 31, 32, 0.88);
+    border-radius: 1%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    top: 0;
+    left: 10em;
+    padding: 1em 2em;
+    text-align: left;
+    color: #fff;
+    font-size: 0.75em;
+  }
+  
+  .onClickTextOverImage.show .bookCompleteInfo {
+    opacity: 1;
+    visibility: visible;
+  }
+
+.titleC{
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;   
+    color: #5EB4DD;
+}
+
+.authC,.pagesC{ 
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: 380;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+.itemTitle{
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    color: #858585;
+}
+
+article{
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: #FFFFFF;
+}
