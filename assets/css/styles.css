@@ -121,7 +121,7 @@
     font-size: 14px;
 }
 
-.vl {/*Separation line*/
+.vl {/*Separating line*/
     border: 0.8px solid #979797;
     background:#979797;
     height:40px;
@@ -177,7 +177,6 @@
           transform: rotate(-180deg);
           direction: rtl;
         } */
-
 
 /*LEFT SIDEBAR STYLES*/
 
@@ -282,12 +281,6 @@ li i{/*i from li elements of left sidebar*/
     border:solid 1px blueviolet;
 }
 
-.card{/*Card for book information*/
-   /* width:140px;*/
-    height:251px;
-    border:solid 2px orange;
-}
-
 .cover{/*Cover of the book*/
     width:100px;
     height: 150px;
@@ -298,10 +291,10 @@ li i{/*i from li elements of left sidebar*/
 .first{/*Fist book*/
      margin-left:68px;
 }
-.last{
+.last{/*Last book*/
     margin-right:68px;
 }
-.title{/*Title*/
+.title{/*Book title*/
     font-family: Pluto Sans;
     font-style: normal;
     font-weight: 500;
@@ -309,7 +302,7 @@ li i{/*i from li elements of left sidebar*/
     color: #383838;
 }
 
-.auth{/*Author*/
+.auth{/*Book author*/
     font-family: Pluto Sans;
     font-style: normal;
     font-weight: 300;
@@ -317,31 +310,22 @@ li i{/*i from li elements of left sidebar*/
     color: #9E9E9E;
 }
 
-.fa-star{/*Rating*/
+.fa-star{/*Book rating*/
     font-size: 10px;
     color: #6EC1E4;
 }
 
-.pri{
+.bookContainer{/*Book container*/
     border:solid 2px lightseagreen;
     height: 251px;
     padding: 0;
 }
 
-#portada{
+.bookImage{/*Book image space*/
     border: solid 1px red;
     height: 160px;
     padding: 0;
-    
 }
-
-#titulo{
-    border:solid 1px blue;
-}
-
-
-
-
 
 /*RIGHT SIDEBAR STYLES*/
 
@@ -370,6 +354,23 @@ li i{/*i from li elements of left sidebar*/
     opacity: 0.7;
 }
 
+/*HOVER*/
+
+/*Giving color when hover in left sidebar items*/
+.items:hover{
+    color:white;
+}
+/*Giving shadow when hover in a book*/
+.cover:hover{
+    -webkit-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.94);
+    -moz-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.94);
+    box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.94);
+}
+/*Giving color when hover in the icons*/
+#icon1:hover,#icon2:hover{
+    color:darkgray;
+}
+
 /*@media screen and (max-width: 800px) {
     .column {
         margin-left:0px;
@@ -386,7 +387,7 @@ li i{/*i from li elements of left sidebar*/
     width: 20%;
   }*/
 
-  /*-Disapearing user image and reorganizing content-*/
+/*-Disappearing user image and reorganizing content-*/
 @media (max-width: 768px) { 
     #imageContainer{
         display: none;
@@ -408,14 +409,12 @@ li i{/*i from li elements of left sidebar*/
         margin-left:5%;
     }
 }
-
 /*Positionig search field in the center*/
 @media (max-width: 568px) {
     #searchContainer{
         margin-left:25%;
     }
 }
-
 /*Positioning top information elements*/
 @media (min-width:768px) and (max-width:950px){
     #new,#date,#popularity,#icon1{
@@ -453,7 +452,7 @@ li i{/*i from li elements of left sidebar*/
         margin-left:0px;
     }
 }
-
+/*Resizing bookshelf ands books rows*/
 @media (max-width:575px){
     #bookshelf{
         height: 3000px;
@@ -462,15 +461,27 @@ li i{/*i from li elements of left sidebar*/
     .books{
         height: 1500px;
     }
+
+    .bookImage{
+        margin-left:40%;
+    }
+
+    .bookInfo{
+        margin-left:40%;
+    }
 }
 
-/*Giving color when hover in left sidebar items*/
-.items:hover{
-    color:white;
+@media (min-width:576px) and (max-width:655px){
+    .fa-star{
+        margin-top:0px;
+        font-size:6px;
+    }
 }
-/*Giving shadow when hover in a book*/
-.cover:hover{
-    -webkit-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.94);
-    -moz-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.94);
-    box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.94);
+
+@media(min-width:768px) and (max-width:784px){
+    .fa-star{
+        margin-top:0px;
+        font-size:6px;
+    }
 }
+
