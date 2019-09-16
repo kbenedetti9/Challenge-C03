@@ -1,7 +1,6 @@
 #myContainer{/*Principal container of everything*/
     margin:0;
     padding: 0;
-    border:solid 1px orange;/*Probar*/
 } 
 
 .row{/*Rows*/
@@ -21,7 +20,6 @@
     background: white;
     height: 60px;
     padding: 0;
-    border:solid 1px black;/*Probar*/
 }
 
 #logo{/*Company logo*/
@@ -37,30 +35,10 @@
    font-size:22px;
 }
 
-/*-Positioning logo a name company-*/
-/*@media (min-width: 768px) and (max-width: 1243px) {
-    #logoContainer{
-        padding:0;
-    }
-    #logo{
-        width:30px;
-        margin-left:4px;
-        margin-top:9px;
-    }
-    #name{
-        margin-top:20px;
-        font-size:16px;
-    }
-    #logoContainer{
-        border: solid 1px red;
-    }
-}*/
-
 #container{/*Navbar objects container*/
     height: 60px;   
     background: #FCF8F3;
     border-radius: 0px 0px 0px 0px;
-    border:solid 2px black;/*Probar*/
     padding: 0;/*Prueba busqueda*/
 }
 
@@ -71,17 +49,16 @@
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    border:solid 1px black;/*Probar*/
 }
 
-/*-Disapearing columns between descrip-search and separating line-*/
+/*-Disappearing columns between descrip-search and separating line-*/
 @media (max-width: 1100px) {
     #space,.vl{
         display: none;
     }
 }
 
-/*-Disapearing descrip-*/
+/*-Disappearing descrip-*/
 @media (max-width: 1000px) {
     #descrip{
         display: none;
@@ -92,7 +69,6 @@
 
 #form{/*Search form*/
     margin-top:15px;
-    border:solid 1px red;/*Probar*/
 }
 
 #searchContainer{/*Search container*/
@@ -133,22 +109,19 @@
 #options{/*Login button options*/
     color:black;
     font-family: Pluto Sans;
-     font-style: normal;
-     font-weight: normal;
-     font-size: 14px;
-     margin-left:65px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-left:65px;
 }
 
 #login{/*Login button*/
-    border:solid 1px red;/*Probar*/
     margin-top:25px;
 }
 
 /*USER IMAGE STYLES*/
 #imageContainer{/*Container for user image*/
-    border:solid 1px blueviolet;/*Probar*/
     margin-top:-8px;
-    
 }
 
 #image{/*User image*/
@@ -159,25 +132,6 @@
     margin-left:15px;
 }
 
-    /*-Reorganizing content-*/
-    /* #bookshelf{
-        float:left;
-    }
-
-    #sidebarL{
-        float: right;
-    } */
-    /*-Rotating content and sidebar*/
-    /* .cambia{
-          transform: rotate(180deg);
-          direction: ltr;
-    }
-      
-        .cambia > [class*="col-"] {
-          transform: rotate(-180deg);
-          direction: rtl;
-        } */
-
 /*LEFT SIDEBAR STYLES*/
 
 .side{/*Left and right sidebar*/
@@ -186,6 +140,7 @@
     margin-bottom: 0;
     padding: 0;
 }
+
 .subtitle{/*Left sidebar subtitles*/
     margin-top:30px;
     font-family: Pluto Sans;
@@ -213,14 +168,12 @@ li i{/*i from li elements of left sidebar*/
 }
 
 #bookshelf{/*Bookshlef container*/
-    border: solid 2px red;
     padding:0;
 }
 
 /*TOP INFORMATION STYLES*/
 .test{/*Top information columns*/
     height: 40px;
-    border:solid 1px fuchsia;
 }
 #new{/*New releases space*/
     margin-top:10px; 
@@ -270,30 +223,29 @@ li i{/*i from li elements of left sidebar*/
 } 
 
 #topInfoContainer{/*Top information container*/
-    border: solid 1px yellowgreen;
     height: 40px;
     padding: 0px;
 }
 
 /*BOOKS STYLES*/
 .books{/*Book row*/
-    height: 251px;
-    border:solid 1px blueviolet;
+    height: 254px;
 }
 
 .cover{/*Cover of the book*/
     width:100px;
     height: 150px;
     margin-left:20px;
-    border:solid 2px darkcyan;
 } 
 
 .first{/*Fist book*/
      margin-left:68px;
 }
+
 .last{/*Last book*/
     margin-right:68px;
 }
+
 .title{/*Book title*/
     font-family: Pluto Sans;
     font-style: normal;
@@ -316,13 +268,11 @@ li i{/*i from li elements of left sidebar*/
 }
 
 .bookContainer{/*Book container*/
-    border:solid 2px lightseagreen;
     height: 251px;
     padding: 0;
 }
 
 .bookImage{/*Book image space*/
-    border: solid 1px red;
     height: 160px;
     padding: 0;
 }
@@ -470,7 +420,7 @@ li i{/*i from li elements of left sidebar*/
         margin-left:40%;
     }
 }
-
+/*Resizing stars*/
 @media (min-width:576px) and (max-width:655px){
     .fa-star{
         margin-top:0px;
@@ -485,13 +435,13 @@ li i{/*i from li elements of left sidebar*/
     }
 }
 
-#imagen{
+#myCover{/*Book cover*/
     background-size: cover;
 }
 
-
 /*BOOK SELECTION*/
 
+/*How looks image when select it*/
 .onClickTextOverImage{
     background-size:cover;
     display:inline-block;
@@ -500,7 +450,7 @@ li i{/*i from li elements of left sidebar*/
     position:relative;
   }
   
-.onClickTextOverImage .fondo{
+.onClickTextOverImage .back{
     position:absolute;
     color:#fff;
     padding:0px;
@@ -516,13 +466,13 @@ li i{/*i from li elements of left sidebar*/
     transition:.3s;
   }
   
-.onClickTextOverImage.show .fondo{
+.onClickTextOverImage.show .back{
     opacity:1;
     padding-top:0%;
     visibility:visible;
   }
 
-.heart{
+.heart{/*Heart icon for complete book information*/
     position: absolute;
     height: 16px;
     left: 8%;
@@ -530,7 +480,7 @@ li i{/*i from li elements of left sidebar*/
     top: calc(11% - 16px/2 + 2px);
 }
 
-.bookMark{
+.bookMark{/*book mark icon for complete book information*/
     position: absolute;
     height: 16px;
     left: 75%;
@@ -538,28 +488,31 @@ li i{/*i from li elements of left sidebar*/
     top: calc(11% - 16px/2 + 2px);
 }
 
-.bookOpen{
+.bookOpen{/*Book open icon for complete book information*/
     height:25px;
     margin-top:60px;
 }
 
-.rating{
+.rating{/*Rating title for complete book information*/
     margin-top:25px;
     color: #FCF8F3;
     font-size:8px;
     font-family: Pluto Sans;
     margin-bottom: 0px;
 }
-.ratingStars{
+
+.ratingStars{/*Rating stars for complete book information*/
     margin-top:0px;
 }
 
-.stars{
+.stars{/*Stars for complete book information*/
     color: #E9BD49;
     font-size: 8px;
 }
 
-/*BOOK SELECTION INFORMATION*/
+/*BOOK SELECTION STYLES*/
+
+/*Arrow for complete book information*/
 .onClickTextOverImage .arrow{
     visibility: hidden;
     position: absolute;
@@ -569,11 +522,11 @@ li i{/*i from li elements of left sidebar*/
     color: rgba(35, 31, 32, 0.88);
     opacity: 0;
 }
-
 .onClickTextOverImage.show .arrow{
     opacity: 1;
     visibility: visible;
 }
+/*Box for complete book information*/
 .onClickTextOverImage .bookCompleteInfo {
     position: absolute;
     z-index: 100;
@@ -590,14 +543,63 @@ li i{/*i from li elements of left sidebar*/
     text-align: left;
     color: #fff;
     font-size: 0.75em;
-  }
-  
-  .onClickTextOverImage.show .bookCompleteInfo {
+}
+.onClickTextOverImage.show .bookCompleteInfo {
     opacity: 1;
     visibility: visible;
-  }
+}
+/*Box for second row of books for complete information*/
+.onClickTextOverImage .second {
+    position: absolute;
+    z-index: 100;
+    width: 23em;
+    height: 22.375em;
+    background-color: rgba(35, 31, 32, 0.88);
+    border-radius: 1%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    left: 10em;
+    top: -2em;
+    padding: 1em 2em;
+    text-align: left;
+    color: #fff;
+    font-size: 0.75em;
+}
+/*Box for the last books of the two rows*/
+.onClickTextOverImage .lastBooks {
+    position: absolute;
+    z-index: 100;
+    width: 23em;
+    height: 22.375em;
+    background-color: rgba(35, 31, 32, 0.88);
+    border-radius: 1%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    left:-25em;
+    padding: 1em 2em;
+    text-align: left;
+    color: #fff;
+    font-size: 0.75em;
+}
+/*Right arrow for the last books of the two rows*/
+.onClickTextOverImage .arrow2{
+    visibility: hidden;
+    position: absolute;
+    top:1.5em;
+    left:-0.7em;
+    font-size:35px;
+    color: rgba(35, 31, 32, 0.88);
+    opacity: 0;
+}
+.onClickTextOverImage .arrow2{
+    opacity: 1;
+    visibility: visible;
+}
 
-.titleC{
+
+.titleC{/*Title of the book for complete book information*/
     font-family: Pluto Sans;
     font-style: normal;
     font-weight: bold;
@@ -605,7 +607,7 @@ li i{/*i from li elements of left sidebar*/
     color: #5EB4DD;
 }
 
-.authC,.pagesC{ 
+.authC,.pagesC{ /*Author and pages from complete book information*/
     font-family: Pluto Sans;
     font-style: normal;
     font-weight: 380;
@@ -613,7 +615,7 @@ li i{/*i from li elements of left sidebar*/
     color: #FFFFFF;
 }
 
-.itemTitle{
+.itemTitle{/*Summary and rating*/
     font-family: Pluto Sans;
     font-style: normal;
     font-weight: bold;
@@ -621,10 +623,83 @@ li i{/*i from li elements of left sidebar*/
     color: #858585;
 }
 
-article{
+.recommend{/*Recommend by*/
+    font-family: Pluto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    color: #858585;
+}
+
+article{/*Book summary*/
     font-family: Pluto Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
     color: #FFFFFF;
+}
+
+/*Resizing complete information book box*/
+@media (max-width:575px){
+
+    .onClickTextOverImage .bookCompleteInfo {
+        position: absolute;
+        z-index: 100;
+        width: 205px;
+        height: 22.375em;
+        background-color: rgba(35, 31, 32, 0.88);
+        border-radius: 1%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        top: 0;
+        left: -7em;
+        padding: 1em 2em;
+        text-align: left;
+        color: #fff;
+        font-size: 0.75em;
+    }
+
+    .arrow,.arrow2{
+        visibility: hidden;
+    }
+    .recommended{
+        display:none;
+    }
+    .recommend{
+        visibility: hidden;
+    }
+    
+}
+/*Resizing complete information book box */
+@media (min-width:575px) and (max-width:852px){
+
+    .onClickTextOverImage .firstMiddle {
+        position: absolute;
+        z-index: 100;
+        width: 205px;
+        height: 22.375em;
+        background-color: rgba(35, 31, 32, 0.88);
+        border-radius: 1%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        top: 0;
+        left: -6em;
+        padding: 1em 2em;
+        text-align: left;
+        color: #fff;
+        font-size: 0.75em;
+    }
+
+    .arrow,.arrow2{
+        visibility: hidden;
+    }
+    .recommended{
+        display:none;
+    }
+    .recommend{
+        visibility: hidden;
+    }
+    
 }
