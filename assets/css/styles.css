@@ -653,7 +653,7 @@ article{/*Book summary*/
         visibility: hidden;
         transition: .3s;
         top: 0;
-        left: -7em;
+        left: -4em;
         padding: 1em 2em;
         text-align: left;
         color: #fff;
@@ -702,4 +702,11 @@ article{/*Book summary*/
         visibility: hidden;
     }
     
+}
+
+@media (min-width:768px) and (max-width:992){
+    #sidebarR{
+        width:100%;
+    }
+
 }
