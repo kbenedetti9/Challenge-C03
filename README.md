@@ -28,6 +28,6 @@ I applied media query by defining the elements that I wanted to show and resizin
 
 To show the user the complete information of the book they select I applied a little bit of javaScript to did a function that shows the information od the book only when is click on it, also to disappear it when the user click on it again.
 
-The *index.html* and *styles.css* files are commented.
+The *index.html* and *styles.css* files were commented.
 
 
